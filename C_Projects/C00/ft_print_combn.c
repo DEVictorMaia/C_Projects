@@ -1,10 +1,5 @@
 #include <unistd.h>
 
-void ft_putchar(char c)
-{
-	write (1, &c, 1);
-}
-
 void ft_print_comb(int n, char *comb, int i, char start)
 {
 	if (i == n) {
@@ -31,5 +26,5 @@ void ft_print_combn(int n)
 
 int main(void)
 {
-	ft_print_combn(6);
+	ft_print_combn(6); //The number passed as parameter will be the lenght of the combination.
 }
