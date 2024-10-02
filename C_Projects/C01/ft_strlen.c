@@ -10,5 +10,5 @@ int ft_strlen(char *str) {
 
 int main() {
     char str[] = "VictorHugo";
-    printf("O comprimento de '%s' deve ser %d", str, ft_strlen(str));
+    printf("The length of '%s' must be %d", str, ft_strlen(str));
 }

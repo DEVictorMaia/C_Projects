@@ -22,7 +22,7 @@ int main(void) {
 	int size = 5;
 	int i = 0;
 
-	printf("Array original: {");
+	printf("Original array: {");
 	while (i < size) {
 		printf("%d", tab[i]);
 		if (i < size - 1)
@@ -34,7 +34,7 @@ int main(void) {
 	ft_rev_int_tab(tab, size);
 
 	i = 0;
-	printf("Array invertido: {");
+	printf("Reversed array: {");
 	while (i < size) {
 		printf("%d", tab[i]);
 		if (i < size - 1)

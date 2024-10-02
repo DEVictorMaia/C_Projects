@@ -13,5 +13,5 @@ int main(void) {
 
     ft_div_mod(a, b, &div, &mod);
 
-    printf (" Valores a serem divididos:\n   Dividendo: %d\n   Divisor: %d\n Resultado da divisao:\n   %d / %d = %d\n Resto da divisao:\n   %d / %d = %d", a, b, a, b, div, a, b, mod);
+    printf (" Values to be divided:\n   Dividend: %d\n   Divisor: %d\n Quotient:\n   %d / %d = %d\n Module:\n   %d / %d = %d", a, b, a, b, div, a, b, mod);
 }

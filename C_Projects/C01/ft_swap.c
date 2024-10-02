@@ -9,12 +9,12 @@ void    ft_swap(int *a, int *b) {
 #include <stdio.h>
 
 int main(void) {
-    int a = 1;
-    int b = 2;
+    int a = 42;
+    int b = 24;
     int *ptra = &a;
     int *ptrb = &b;
 
-    printf(" Valores antes da troca:\n   a: %d\n   b: %d\n", a, b);
+    printf(" Values before the swap:\n   a: %d\n   b: %d\n", a, b);
     ft_swap(ptra,  ptrb);
-    printf(" Valores depois da troca:\n   a: %d\n   b: %d", a, b);
+    printf(" Values after the swap:\n   a: %d\n   b: %d", a, b);
 }

@@ -28,7 +28,7 @@ int main(void) {
     int tab[] = {52, 3, 11, 7, 2};
     int size = 5;
 
-    printf("Array original: {");
+    printf("Original array: {");
 	while (i < size) {
 		printf("%d", tab[i]);
 		if (i < size - 1)
@@ -40,7 +40,7 @@ int main(void) {
 	ft_sort_int_tab(tab, size);
 
 	i = 0;
-	printf("Array organizado: {");
+	printf("Sorted array: {");
 	while (i < size) {
 		printf("%d", tab[i]);
 		if (i < size - 1)

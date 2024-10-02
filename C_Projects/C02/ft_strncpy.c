@@ -19,7 +19,7 @@ int main() {
     char src[] = "Victor Hugo";
     char dest[20];
 
-    printf(" String original:\n  %s\n", src);
+    printf(" Original string :\n  %s\n", src);
     ft_strncpy(dest, src, 9);
-    printf(" String copiada:\n  %s", dest);
+    printf(" Copied string :\n  %s", dest);
 }
