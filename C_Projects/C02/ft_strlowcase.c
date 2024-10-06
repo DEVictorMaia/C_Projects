@@ -1,9 +1,11 @@
 #include <stdio.h>
 
-char    *ft_strlowcase(char *str) {
+char    *ft_strlowcase(char *str)
+{
     int i = 0;
 
-    while (str[i] != '\0') {
+    while (str[i] != '\0')
+    {
         if (str[i] >= 65 && str[i] <= 95)
             str[i] += 32;
         i++;
@@ -11,7 +13,8 @@ char    *ft_strlowcase(char *str) {
     return (str);
 }
 
-int main() {
+int main()
+{
     char str[] = "VICTORMAIA";
     char str1[] = "VICtor42";
 

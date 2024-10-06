@@ -1,4 +1,7 @@
-int ft_strlen(char *str) {
+#include <stdio.h>
+
+int ft_strlen(char *str)
+{
     int i = 0;
 
     while (str[i] != '\0')
@@ -6,9 +9,9 @@ int ft_strlen(char *str) {
     return (i);
 }
 
-#include <stdio.h>
-
-int main() {
+int main()
+{
     char str[] = "VictorHugo";
+
     printf("The length of '%s' must be %d", str, ft_strlen(str));
 }

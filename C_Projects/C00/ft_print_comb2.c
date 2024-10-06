@@ -1,21 +1,26 @@
 #include <unistd.h>
 
-void ft_putchar(char c) {
+void ft_putchar(char c)
+{
 	write (1, &c, 1);
 }
 
-void ft_print_nb(int n) {
+void ft_print_nb(int n)
+{
 	ft_putchar (n / 10 + '0');
 	ft_putchar (n % 10 + '0');
 }
 
-void ft_print_comb2(void) {
+void ft_print_comb2(void)
+{
   int i = 0;
   int j;
 
-  while (i <= 98) {
+  while (i <= 98)
+  {
 	j = i + 1;
-	while (j <= 99) {
+	while (j <= 99)
+	{
 		ft_print_nb(i);
 		write (1, " ", 1);
 		ft_print_nb(j);
@@ -27,6 +32,7 @@ void ft_print_comb2(void) {
   }
 }
 
-int main(void) {
+int main(void)
+{
 	ft_print_comb2();
 }

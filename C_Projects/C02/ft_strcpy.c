@@ -1,8 +1,10 @@
 #include <stdio.h>
 
-char    *ft_strcpy(char *dest, char *src) {
+char    *ft_strcpy(char *dest, char *src)
+{
     char *ptr = dest;
-    while (*src) {
+    while (*src)
+    {
         *dest = *src;
         dest++;
         src++;
@@ -11,7 +13,8 @@ char    *ft_strcpy(char *dest, char *src) {
     return (ptr);
 }
 
-int main() {
+int main()
+{
     char src[] = "Victor Hugo";
     char dest[20];
     printf("  The sorce string is '%s'\n", src);

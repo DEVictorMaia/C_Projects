@@ -2,25 +2,29 @@
 
 void    *ft_print_memory(void *addr, unsigned int size);
 
-void    ft_putchar(char c) {
+void    ft_putchar(char c)
+{
     write (1, &c, 1);
 }
 
-void    ft_putstr(char *str) {
-    while (*str) {
+void    ft_putstr(char *str)
+{
+    while (*str)
         ft_putchar(*str++);
-    }
 }
 
-void    print_hex(unsigned char byte) {
+void    print_hex(unsigned char byte)
+{
     char    *hexdigits = "0123456789abcdef";
     ft_putchar(hexdigits[byte / 16]);
     ft_putchar(hexdigits[byte % 16]);
 }
 
-void    print_chars(unsigned char *mem, unsigned int size) {
+void    print_chars(unsigned char *mem, unsigned int size)
+{
     unsigned int i = 0;
-    while (i < size) {
+    while (i < size)
+    {
         if (mem[i] >= 32 && mem[i] <= 126) 
             ft_putchar(mem[i]);
         else
@@ -29,21 +33,25 @@ void    print_chars(unsigned char *mem, unsigned int size) {
     }
 }
 
-void    *ft_print_memory(void *addr, unsigned int size) {
+void    *ft_print_memory(void *addr, unsigned int size)
+{
     unsigned int i;
     unsigned int j;
     unsigned char *mem = (unsigned char *)addr;
 
     i = 0;
-    while (i < size) {
+    while (i < size)
+    {
         j = 0;
-        while (j < 16 && i + j < size) {
+        while (j < 16 && i + j < size)
+        {
             print_hex(mem[i + j]);
             if (j % 2)
                 ft_putchar(' ');
             j++;
         }
-        while (j < 16) {
+        while (j < 16)
+        {
             ft_putstr("   ");
             if (j % 2)
                 ft_putchar(' ');
@@ -56,7 +64,8 @@ void    *ft_print_memory(void *addr, unsigned int size) {
     return (addr);
 }
 
-int main() {
+int main()
+{
     char data[] = "42Lisboa\nHello World!\x01\x02\x03\x04\x05";
     char num[] = "0123456789";
     char alpha[] = "abcdefghijklmnopqrstuvwxyz";

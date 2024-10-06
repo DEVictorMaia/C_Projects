@@ -1,9 +1,11 @@
 #include <stdio.h>
 
-int ft_str_is_uppercase(char *str) {
+int ft_str_is_uppercase(char *str)
+{
     int i = 0;
 
-    while (str[i] != '\0') {
+    while (str[i] != '\0')
+    {
         if (str[i] < 65 || str[i] > 90) 
             return (0);
         i++;
@@ -11,7 +13,8 @@ int ft_str_is_uppercase(char *str) {
     return (1);
 }
 
-int main(void) {
+int main(void)
+{
     char str[] = "VICTOR";
     char str1[] = "victor";
     char str2[] = "VICTOR42";

@@ -1,11 +1,13 @@
-void    ft_div_mod(int a, int b, int *div, int *mod) {
+#include <stdio.h>
+
+void    ft_div_mod(int a, int b, int *div, int *mod) 
+{
     *div = a / b;
     *mod = a % b;
 }
 
-#include <stdio.h>
-
-int main(void) {
+int main(void)
+{
     int a = 177;
     int b = 6;
     int mod;

@@ -1,9 +1,11 @@
 #include <stdio.h>
 
-int ft_str_is_numeric(char *str) {
+int ft_str_is_numeric(char *str)
+{
     int i = 0;
 
-    while (str[i] != '\0') {
+    while (str[i] != '\0')
+    {
         if (str[i] < 48 || str[i] > 57)
             return (0);
         i++;
@@ -11,7 +13,8 @@ int ft_str_is_numeric(char *str) {
     return (1);
 }
 
-int main(void) {
+int main(void)
+{
     char str[] = "42";
     char str1[] = "Victor";
     char str2[] = "";

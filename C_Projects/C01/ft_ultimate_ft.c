@@ -1,10 +1,13 @@
-void    ft_ultimate_ft(int *********nbr) {
+#include <stdio.h>
+
+void    ft_ultimate_ft(int *********nbr)
+{
     *********nbr = 42;
 }
 
-#include <stdio.h>
  
-int main(void) {
+int main(void)
+{
     int n;
     int *nbr8 = &n;
     int **nbr7 = &nbr8;
