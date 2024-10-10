@@ -22,6 +22,6 @@ int main()
     char s1[] = "Victor ";
     char s2[] = "Hugo Maia";
 
-    printf(" Strings before the concatenation:\n   %s;\n   %s;\n", s1, s2);
-    printf(" Concatenating the first 4 letters: %s\n", ft_strncat(s1, s2, 4));
+    printf("\n Strings before the concatenation:\n   %s;\n   %s;\n", s1, s2);
+    printf(" Concatenating the first 4 letters: %s\n\n", ft_strncat(s1, s2, 4));
 }
